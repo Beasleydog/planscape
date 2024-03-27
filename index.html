@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/pathseg.js"></script>
+    <script src="libs/decomp.js"></script>
+    <script src="libs/matter.js"></script>
+    <script src="libs/simplify.js"></script>
+    <script src="libs/matterAttractors.js"></script>
+    <script>window.levelsData = [];</script>
+    <script src="./levels/1.js"></script>
+    <script src="./levels/2.js"></script>
+    <script src="./levels/3.js"></script>
+    <script src="./levels/4.js"></script>
+    <script src="./levels/5.js"></script>
+    <script src="./levels/6.js"></script>
+    <script src="index.js" defer></script>
+    <script src="gameLoop.js" defer></script>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="introScreen">
+        <div id="gameTitle">PlanScape</div>
+        <div id="definition">Resilience: The ability to bounce back after hitting a wall</div>
+        <div id="buttons">
+            <div id="start" class="homeScreenButton">
+                Start
+            </div>
+        </div>
+    </div>
+    <div id="gameScreen">
+        <div class="gameButton buttonSelected" id="penButton">
+            <img src="./assets/pencil.svg" />
+        </div>
+        <div id="inkLeft">
+            0
+        </div>
+        <canvas id="world" width="800" height="1080"></canvas>
+        <div class="gameButton" id="eraserButton">
+            <img src="./assets/eraser.svg" />
+        </div>
+        <div id="info">
+            Space to drop the ball!
+        </div>
+    </div>
+    <div id="gameOverScreen">
+        <div id="overTitle">Congrats!</div>
+        <div id="overDetail">You succesfully navigated Bobby the ball through all levels, all the while mainting his
+            Resilience!</div>
+    </div>
+</body>
+
+</html>
